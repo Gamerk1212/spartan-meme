@@ -1,0 +1,76 @@
+/* top right bottom left */
+
+.img_container {
+  padding-top: 20px;
+  padding-bottom: 5px;
+  border-radius: 5px;
+  box-shadow: 0px 0px 10px rgb(213, 213, 213);
+  background-color:white;
+  display: inline-block;
+  user-select:none;
+  margin: 10px;
+  vertical-align: top;
+}
+
+.ic_button {
+  margin: 0px 0px 0px 5px;
+  padding: 0px 5px 0px 5px;
+  display: inline-block;
+}
+
+.ic_button:hover {
+  box-shadow: 0px 0px 10px rgb(210, 210, 210);
+  cursor: pointer;
+}
+
+.ic_button:active {
+  box-shadow: 0px 0px 10px rgb(180, 180, 180);
+}
+
+#title_banner {
+  height: 60px;
+  margin: 0px;
+  padding: 5px;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 50px;
+  color: white;
+  background-image: linear-gradient(to right, orange, yellow);
+  text-align: start;
+  border-radius: 5px;
+}
+
+.upvote_count {
+  font-size: 9px;
+  color: rgb(100, 100 100);
+  font-family: Tahoma, Helvetica, sans-serif;
+  display: inline-block;
+  margin: 2px;
+}
+
+.flag_popup {
+  font-family: Arial, Helvetica, sans-serif;
+  padding: 10px;
+  border-radius: 5px;
+  box-shadow: 0px 0px 10px rgb(213, 213, 213);
+  background-color:white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.text_button {
+  margin: 0px 5px 0px 0px;
+  padding: 5px 5px 5px 5px;
+  border-radius: 5px;
+  border: 1px solid rgb(210, 210, 210);
+  display: inline-block;
+}
+
+.text_button:hover {
+  box-shadow: 0px 0px 10px rgb(210, 210, 210);
+  cursor: pointer;
+}
+
+.text_button:active {
+  box-shadow: 0px 0px 10px rgb(180, 180, 180);
+}
