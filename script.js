@@ -13,6 +13,12 @@ const oauthConfig = {
 }
 
 gapi.auth2.init(oauthConfig);
+var user_profile;
+
+// Get user data on sign in
+function onSignIn(user){
+  user_profile = user.getBasicProfile();
+}
 
 // --- Firebase ---
 const firebaseConfig = {
@@ -113,7 +119,7 @@ class ImagePanel {
           trdata[self.name] = doc.data()[self.name];
           self.toggleUpvoted();
           self.updateUpvotes();
-          trdata[self.name]["upvotes"] = self.upvotes;
+          trdata[self.name]["upvotes"] = this.upvotes;
 
           transaction.update(meme_imgs, trdata);
         });
@@ -256,12 +262,6 @@ function display_posts(){
     return b.upvotes - a.upvotes;
   });
   posts.map(i => i.show());
-}
-
-// User sign in
-function onSignIn(user){
-  var profile = user.getBasicProfile();
-  console.log(profile);
 }
 
 get_posts();
