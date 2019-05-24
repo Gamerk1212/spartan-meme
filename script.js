@@ -12,6 +12,8 @@ const oauthConfig = {
   }
 }
 
+gapi.auth2.init(oauthConfig);
+
 // --- Firebase ---
 const firebaseConfig = {
   apiKey: "AIzaSyBohhQsfMalxnuSv_mntFHW-pOEnaI2Vu4",
